@@ -29,7 +29,14 @@
 ## Installation
 
 ```bash
+# install all packages needed
 $ npm install
+
+# Run Migrations
+npx prisma migrate dev --name "init"
+
+# Run DB Seeder
+npx prisma db seed
 ```
 
 ## Running the app
@@ -46,6 +53,9 @@ $ npm run start:prod
 ```
 
 ## Test
+
+<img width="485" alt="image" src="https://github.com/syahrinal-muchtar/vending-machine-api/assets/33303153/9280a2f5-a5e9-40e1-9498-f82ca7d3e9f8">
+
 
 ```bash
 # unit tests
