@@ -86,7 +86,7 @@ describe('DrinksController', () => {
         updatedAt: new Date(),
       };
 
-      jest.spyOn(service, 'findOne').mockImplementation(() => result);
+      jest.spyOn(service, 'create').mockImplementation(() => result);
 
       expect(await controller.create(payload)).toStrictEqual(result);
     });
